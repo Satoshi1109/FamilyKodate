@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -15,8 +15,17 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    ViewController *gregorian = [[ViewController alloc] init];
+    gregorian.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    gregorian.calendar.locale = [NSLocale currentLocale];
+    
+    UINavigationController* navigationController =[[UINavigationController alloc] initWithRootViewController:gregorian];
+    [[UIApplication sharedApplication] delegate].window.rootViewController = navigationController;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

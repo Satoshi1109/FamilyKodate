@@ -15,6 +15,8 @@
 		4031F31B19E3082400FDDCAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4031F31A19E3082400FDDCAF /* Images.xcassets */; };
 		4031F31E19E3082400FDDCAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4031F31C19E3082400FDDCAF /* LaunchScreen.xib */; };
 		4031F32A19E3082400FDDCAF /* FamiKom_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4031F32919E3082400FDDCAF /* FamiKom_iOSTests.m */; };
+		40DC8A8C19E9985100CAF626 /* TSQTACalendarRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A8B19E9985100CAF626 /* TSQTACalendarRowCell.m */; };
+		40DC8A9119E9ACC300CAF626 /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8A9019E9ACC300CAF626 /* libTimesSquare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042E04A71FDEC561705E56AF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		27ECAEAFCA1BB1F2B9B5E093 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4031F30A19E3082400FDDCAF /* FamiKom_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamiKom_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4031F30E19E3082400FDDCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4031F30F19E3082400FDDCAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +45,10 @@
 		4031F32319E3082400FDDCAF /* FamiKom_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamiKom_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4031F32819E3082400FDDCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4031F32919E3082400FDDCAF /* FamiKom_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FamiKom_iOSTests.m; sourceTree = "<group>"; };
+		40DC8A8A19E9985100CAF626 /* TSQTACalendarRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSQTACalendarRowCell.h; path = Models/TSQTACalendarRowCell.h; sourceTree = "<group>"; };
+		40DC8A8B19E9985100CAF626 /* TSQTACalendarRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSQTACalendarRowCell.m; path = Models/TSQTACalendarRowCell.m; sourceTree = "<group>"; };
+		40DC8A9019E9ACC300CAF626 /* libTimesSquare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTimesSquare.a; path = "Build/Products/Debug-iphonesimulator/libTimesSquare.a"; sourceTree = "<group>"; };
 		83A176D70A9A4269A99D664D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6021E6D4AAA4D969CAA596B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A41C7926A2F46E8B8662AD2 /* libPods.a in Frameworks */,
+				40DC8A9119E9ACC300CAF626 /* libTimesSquare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +85,9 @@
 				4031F30C19E3082400FDDCAF /* FamiKom_iOS */,
 				4031F32619E3082400FDDCAF /* FamiKom_iOSTests */,
 				4031F30B19E3082400FDDCAF /* Products */,
-				B6021E6D4AAA4D969CAA596B /* Pods.xcconfig */,
+				40DC8A9019E9ACC300CAF626 /* libTimesSquare.a */,
 				3127E73F1D6F45CBA92F609C /* Frameworks */,
+				9976F6D2C7A9EF2D4875BC52 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +147,7 @@
 		40DC8A8519E9968100CAF626 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				40DC8A8919E997F400CAF626 /* Calender */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -153,8 +162,34 @@
 		40DC8A8719E9969500CAF626 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				40DC8A8819E997E500CAF626 /* Calender */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		40DC8A8819E997E500CAF626 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Calender;
+			sourceTree = "<group>";
+		};
+		40DC8A8919E997F400CAF626 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				40DC8A8A19E9985100CAF626 /* TSQTACalendarRowCell.h */,
+				40DC8A8B19E9985100CAF626 /* TSQTACalendarRowCell.m */,
+			);
+			name = Calender;
+			sourceTree = "<group>";
+		};
+		9976F6D2C7A9EF2D4875BC52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				042E04A71FDEC561705E56AF /* Pods.debug.xcconfig */,
+				27ECAEAFCA1BB1F2B9B5E093 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +317,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -292,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DC8A8C19E9985100CAF626 /* TSQTACalendarRowCell.m in Sources */,
 				4031F31619E3082400FDDCAF /* ViewController.m in Sources */,
 				4031F31319E3082400FDDCAF /* AppDelegate.m in Sources */,
 				4031F31019E3082400FDDCAF /* main.m in Sources */,
@@ -414,24 +450,44 @@
 		};
 		4031F32E19E3082400FDDCAF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6021E6D4AAA4D969CAA596B /* Pods.xcconfig */;
+			baseConfigurationReference = 042E04A71FDEC561705E56AF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/TimesSquare\"",
+				);
 				INFOPLIST_FILE = FamiKom_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FamiKom_iOS",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		4031F32F19E3082400FDDCAF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6021E6D4AAA4D969CAA596B /* Pods.xcconfig */;
+			baseConfigurationReference = 27ECAEAFCA1BB1F2B9B5E093 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/TimesSquare\"",
+				);
 				INFOPLIST_FILE = FamiKom_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FamiKom_iOS",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
