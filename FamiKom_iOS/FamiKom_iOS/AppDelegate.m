@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <NCMB/NCMB.h>
+#import "Config.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [NCMB setApplicationKey:kNiftyAppKey clientKey:kNiftyClientKey];
+    
+    NCMBQuery *query = [NCMBQuery queryWithClassName:@"TestClass"];
+    [query whereKey:@"message" equalTo:@"test"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error == nil) {
+            if ([objects count] > 0) {
+                NSLog(@"[FIND] %@", [[objects objectAtIndex:0] objectForKey:@"message"]);
+            } else {
+                NSError *saveError = nil;
+                NCMBObject *obj = [NCMBObject objectWithClassName:@"TestClass"];
+                [obj setObject:@"Hello, NCMB!" forKey:@"message"];
+                [obj save:&saveError];
+                if (saveError == nil) {
+                    NSLog(@"[SAVE] Done");
+                } else {
+                    NSLog(@"[SAVE-ERROR] %@", saveError);
+                }
+            }
+        } else {
+            NSLog(@"[ERROR] %@", error);
+        }
+    }];
+    
     ViewController *gregorian = [[ViewController alloc] init];
     gregorian.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     gregorian.calendar.locale = [NSLocale currentLocale];

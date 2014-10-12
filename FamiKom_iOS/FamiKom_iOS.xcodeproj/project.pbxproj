@@ -17,6 +17,18 @@
 		4031F32A19E3082400FDDCAF /* FamiKom_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4031F32919E3082400FDDCAF /* FamiKom_iOSTests.m */; };
 		40DC8A8C19E9985100CAF626 /* TSQTACalendarRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8A8B19E9985100CAF626 /* TSQTACalendarRowCell.m */; };
 		40DC8A9119E9ACC300CAF626 /* libTimesSquare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8A9019E9ACC300CAF626 /* libTimesSquare.a */; };
+		40DC8A9519EA242B00CAF626 /* NCMB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8A9419EA242B00CAF626 /* NCMB.framework */; };
+		40DC8A9719EA244F00CAF626 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8A9619EA244F00CAF626 /* QuartzCore.framework */; };
+		40DC8A9919EA246400CAF626 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8A9819EA246400CAF626 /* MobileCoreServices.framework */; };
+		40DC8A9B19EA248800CAF626 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8A9A19EA248800CAF626 /* SystemConfiguration.framework */; };
+		40DC8A9D19EA249200CAF626 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8A9C19EA249200CAF626 /* AudioToolbox.framework */; };
+		40DC8A9F19EA249C00CAF626 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8A9E19EA249C00CAF626 /* CoreGraphics.framework */; };
+		40DC8AA119EA24A900CAF626 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8AA019EA24A900CAF626 /* UIKit.framework */; };
+		40DC8AA319EA24B700CAF626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC8AA219EA24B700CAF626 /* Foundation.framework */; };
+		40DC8AA919EA250400CAF626 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8AA519EA250400CAF626 /* CHANGELOG.md */; };
+		40DC8AAA19EA250400CAF626 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8AA719EA250400CAF626 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		40DC8AAB19EA250400CAF626 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8AA819EA250400CAF626 /* README.md */; };
+		40DC8AAE19EA2F7200CAF626 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DC8AAD19EA2F7200CAF626 /* Config.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +60,21 @@
 		40DC8A8A19E9985100CAF626 /* TSQTACalendarRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSQTACalendarRowCell.h; path = Models/TSQTACalendarRowCell.h; sourceTree = "<group>"; };
 		40DC8A8B19E9985100CAF626 /* TSQTACalendarRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSQTACalendarRowCell.m; path = Models/TSQTACalendarRowCell.m; sourceTree = "<group>"; };
 		40DC8A9019E9ACC300CAF626 /* libTimesSquare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTimesSquare.a; path = "Build/Products/Debug-iphonesimulator/libTimesSquare.a"; sourceTree = "<group>"; };
+		40DC8A9219EA23F700CAF626 /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NCMB.framework; path = ../../../../Downloads/NCMB.framework; sourceTree = "<group>"; };
+		40DC8A9419EA242B00CAF626 /* NCMB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NCMB.framework; path = FamiKom_iOS/NCMB.framework; sourceTree = "<group>"; };
+		40DC8A9619EA244F00CAF626 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		40DC8A9819EA246400CAF626 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		40DC8A9A19EA248800CAF626 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		40DC8A9C19EA249200CAF626 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		40DC8A9E19EA249C00CAF626 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		40DC8AA019EA24A900CAF626 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		40DC8AA219EA24B700CAF626 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		40DC8AA519EA250400CAF626 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		40DC8AA619EA250400CAF626 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		40DC8AA719EA250400CAF626 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		40DC8AA819EA250400CAF626 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		40DC8AAC19EA2F7200CAF626 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = Models/Config.h; sourceTree = "<group>"; };
+		40DC8AAD19EA2F7200CAF626 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Config.m; path = Models/Config.m; sourceTree = "<group>"; };
 		83A176D70A9A4269A99D664D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,6 +83,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DC8AA319EA24B700CAF626 /* Foundation.framework in Frameworks */,
+				40DC8AA119EA24A900CAF626 /* UIKit.framework in Frameworks */,
+				40DC8A9F19EA249C00CAF626 /* CoreGraphics.framework in Frameworks */,
+				40DC8A9D19EA249200CAF626 /* AudioToolbox.framework in Frameworks */,
+				40DC8A9B19EA248800CAF626 /* SystemConfiguration.framework in Frameworks */,
+				40DC8A9919EA246400CAF626 /* MobileCoreServices.framework in Frameworks */,
+				40DC8A9719EA244F00CAF626 /* QuartzCore.framework in Frameworks */,
+				40DC8A9519EA242B00CAF626 /* NCMB.framework in Frameworks */,
 				2A41C7926A2F46E8B8662AD2 /* libPods.a in Frameworks */,
 				40DC8A9119E9ACC300CAF626 /* libTimesSquare.a in Frameworks */,
 			);
@@ -74,6 +109,15 @@
 		3127E73F1D6F45CBA92F609C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40DC8AA219EA24B700CAF626 /* Foundation.framework */,
+				40DC8AA019EA24A900CAF626 /* UIKit.framework */,
+				40DC8A9E19EA249C00CAF626 /* CoreGraphics.framework */,
+				40DC8A9C19EA249200CAF626 /* AudioToolbox.framework */,
+				40DC8A9A19EA248800CAF626 /* SystemConfiguration.framework */,
+				40DC8A9819EA246400CAF626 /* MobileCoreServices.framework */,
+				40DC8A9619EA244F00CAF626 /* QuartzCore.framework */,
+				40DC8A9419EA242B00CAF626 /* NCMB.framework */,
+				40DC8A9219EA23F700CAF626 /* NCMB.framework */,
 				83A176D70A9A4269A99D664D /* libPods.a */,
 			);
 			name = Frameworks;
@@ -82,6 +126,7 @@
 		4031F30119E3082400FDDCAF = {
 			isa = PBXGroup;
 			children = (
+				40DC8AA419EA250400CAF626 /* JSONKit-master */,
 				4031F30C19E3082400FDDCAF /* FamiKom_iOS */,
 				4031F32619E3082400FDDCAF /* FamiKom_iOSTests */,
 				4031F30B19E3082400FDDCAF /* Products */,
@@ -163,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				40DC8A8819E997E500CAF626 /* Calender */,
+				40DC8AAC19EA2F7200CAF626 /* Config.h */,
+				40DC8AAD19EA2F7200CAF626 /* Config.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -181,6 +228,17 @@
 				40DC8A8B19E9985100CAF626 /* TSQTACalendarRowCell.m */,
 			);
 			name = Calender;
+			sourceTree = "<group>";
+		};
+		40DC8AA419EA250400CAF626 /* JSONKit-master */ = {
+			isa = PBXGroup;
+			children = (
+				40DC8AA519EA250400CAF626 /* CHANGELOG.md */,
+				40DC8AA619EA250400CAF626 /* JSONKit.h */,
+				40DC8AA719EA250400CAF626 /* JSONKit.m */,
+				40DC8AA819EA250400CAF626 /* README.md */,
+			);
+			path = "JSONKit-master";
 			sourceTree = "<group>";
 		};
 		9976F6D2C7A9EF2D4875BC52 /* Pods */ = {
@@ -328,6 +386,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				40DC8A8C19E9985100CAF626 /* TSQTACalendarRowCell.m in Sources */,
+				40DC8AAE19EA2F7200CAF626 /* Config.m in Sources */,
+				40DC8AA919EA250400CAF626 /* CHANGELOG.md in Sources */,
+				40DC8AAA19EA250400CAF626 /* JSONKit.m in Sources */,
+				40DC8AAB19EA250400CAF626 /* README.md in Sources */,
 				4031F31619E3082400FDDCAF /* ViewController.m in Sources */,
 				4031F31319E3082400FDDCAF /* AppDelegate.m in Sources */,
 				4031F31019E3082400FDDCAF /* main.m in Sources */,
@@ -452,7 +514,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 042E04A71FDEC561705E56AF /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/yamamoto/Downloads,
+					"$(PROJECT_DIR)/FamiKom_iOS",
+				);
 				HEADER_SEARCH_PATHS = (
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
@@ -466,7 +537,20 @@
 					"$(PROJECT_DIR)/FamiKom_iOS",
 					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
 				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-l\"Pods-AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -474,7 +558,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27ECAEAFCA1BB1F2B9B5E093 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/yamamoto/Downloads,
+					"$(PROJECT_DIR)/FamiKom_iOS",
+				);
 				HEADER_SEARCH_PATHS = (
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
@@ -488,7 +581,19 @@
 					"$(PROJECT_DIR)/FamiKom_iOS",
 					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
 				);
+				OTHER_LDFLAGS = (
+					"-l\"Pods-AFNetworking\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
