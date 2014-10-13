@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  FamiKom_iOS
+//
+//  Created by 山本　恭大 on 2014/10/13.
+//  Copyright (c) 2014年 山本　恭大. All rights reserved.
+//
+
+#ifndef FamiKom_iOS_PrefixHeader_pch
+#define FamiKom_iOS_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+typedef enum {
+    FATHER = 1,
+    MOTHER,
+    GRANDFATHER, //じいちゃん
+    GRANDMOTHER, //ばあちゃん
+    BROTHER,//長男
+    SISTER,//長女
+    BROTHER1,//次男 以下略
+    SISTER1,
+    BROTHER2,
+    SISTER2,
+    BROTHER3,
+    SISTER3,
+    BROTHER4,
+    SISTER4,
+    BROTHER5,
+    SISTER5,
+}familyType;
+
+#endif

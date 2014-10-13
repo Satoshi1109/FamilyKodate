@@ -11,7 +11,9 @@
 extern NSString *kNiftyAppKey;
 
 extern NSString *kNiftyClientKey;
-
+extern NSString *kRakutenCategoryList;
+extern NSString *kRakutenCategoryRanking;
+extern NSString *kRaktenAppID;
 @interface Config : NSObject
 
 @end

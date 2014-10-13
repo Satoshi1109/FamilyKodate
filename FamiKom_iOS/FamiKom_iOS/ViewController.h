@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import <TimesSquare/TimesSquare.h>
+@interface ViewController : UIViewController<TSQCalendarViewDelegate>
 
 @property (nonatomic, strong) NSCalendar *calendar;
 @end

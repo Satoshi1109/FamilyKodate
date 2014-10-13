@@ -26,6 +26,7 @@
 {
     TSQCalendarView *calendarView = [[TSQCalendarView alloc] init];
     calendarView.calendar = self.calendar;
+    calendarView.delegate = self;
     calendarView.rowCellClass = [TSQTACalendarRowCell class];
     calendarView.firstDate = [NSDate dateWithTimeIntervalSinceNow:-60 * 60 * 24 * 365 * 1];
     calendarView.lastDate = [NSDate dateWithTimeIntervalSinceNow:60 * 60 * 24 * 365 * 5];
@@ -73,6 +74,16 @@
     
     [tableView setContentOffset:CGPointMake(0.f, atTop ? 10000.f : 0.f) animated:YES];
     atTop = !atTop;
+}
+
+- (BOOL)calendarView:(TSQCalendarView *)calendarView shouldSelectDate:(NSDate *)date
+{
+    return true;
+}
+
+- (void)calendarView:(TSQCalendarView *)calendarView didSelectDate:(NSDate *)date
+{
+    NSLog(@"date:%@",date);
 }
 
 @end
