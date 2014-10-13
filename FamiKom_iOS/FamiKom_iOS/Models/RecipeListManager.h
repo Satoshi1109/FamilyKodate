@@ -11,6 +11,7 @@
 #import "Recipe.h"
 
 @interface RecipeListManager : NSObject
++ (RecipeListManager*)sharedManager;
 @property(nonatomic)NSMutableDictionary *recipesChache;//レシピリストのキャッシュ
 @property(nonatomic)NSMutableArray *Recipes;//RecipeListのarray（今の所使わない、消す？）
 @property(nonatomic)NSMutableArray *SelectRecipes;//選択されたレシピ（TodaysRecipeのarray）

@@ -13,15 +13,15 @@
 
 @implementation RecipeList
 
--(NSMutableArray*)recipes
+-(NSMutableArray*)getRecipes
 {
     __block NSMutableArray *ret=self.recipes;
     if(ret != nil) return ret;//キャッシュが有ったらそっちを使う
     
     // 入力パラメータ
     NSDictionary *sdict = @{
-                            @"categoryID" :[NSNumber numberWithInteger: self.categoryID],
-                            @"applicationID": kRaktenAppID,
+                            @"categoryId" :[NSNumber numberWithInteger: self.categoryID],
+                            @"applicationId": kRaktenAppID,
                             @"format":@"json"
                             };
     
@@ -34,7 +34,7 @@
           ret = [self convertRecipe:dict];
           self.recipes = ret;
           flag = NO;
-          
+          NSLog(@"success:%@",dict);
       } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
           NSLog(@"operationFriends:%@",operation.request.URL.relativeString);
           NSLog(@"Error: %@", error);

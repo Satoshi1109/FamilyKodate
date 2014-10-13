@@ -46,6 +46,7 @@ static RecipeListManager* _sharedInstance = nil;
     //無かったら作る
     RecipeList *recipes = [RecipeList alloc];
     recipes.categoryID = categoryID;
+    [recipes getRecipes];
     [self.recipesChache setObject:recipes forKey:[NSString stringWithFormat:@"%d",categoryID]];
     return recipes;
 }

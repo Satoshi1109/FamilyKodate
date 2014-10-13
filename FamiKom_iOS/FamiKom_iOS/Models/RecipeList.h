@@ -11,6 +11,6 @@
 @interface RecipeList : NSObject
 @property(nonatomic)NSInteger categoryID;
 @property(nonatomic)NSMutableArray *recipes;
-
+-(NSMutableArray*)getRecipes;
 
 @end

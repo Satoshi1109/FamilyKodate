@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TSQTACalendarRowCell.h"
 #import <TimesSquare/TimesSquare.h>
+#import "RecipeListManager.h"
 
 @interface ViewController ()
 @property (nonatomic, retain) NSTimer *timer;
@@ -83,6 +84,9 @@
 
 - (void)calendarView:(TSQCalendarView *)calendarView didSelectDate:(NSDate *)date
 {
+    RecipeListManager *mm = [RecipeListManager sharedManager];
+    [mm RecipeList:10];
+    
     NSLog(@"date:%@",date);
 }
 

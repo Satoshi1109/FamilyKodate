@@ -91,8 +91,10 @@
           NSLog(@"Error: %@", error);
           flag = NO;
       }];
+    /*
     while(flag)
         [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.5]];
+     */
     return self.foodImage;
 }
 
@@ -116,8 +118,10 @@
           NSLog(@"Error: %@", error);
           flag = NO;
       }];
+    /*
     while(flag)
         [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.5]];
+     */
     return self.foodImageThumb;
 }
 
